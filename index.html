@@ -68,67 +68,98 @@
                   />
                 </svg>
               </button>
-              <div class="form-wrapper">
+              <div class="form-wrapper p-40">
                 <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
                 <form class="main-user-form">
                   <!-- name input -->
                   <div class="input-wrapper user-name">
-                    <label class="input-label" for="user-name">Имя</label>
+                    <label class="input-label small-top" for="user-name">Имя</label>
                     <div class="input-area-wrapper">
                       <input
                         type="text"
                         name="user-name"
                         id="user-name"
-                        class="input-text"
+                        class="input-text user-name"
                         autocomplete="name"
                       />
-                      <svg class="icon-svg">
-                        <use href="./images/icons/user.svg#user"></use>
-                      </svg>
+                      <span class="input-icon">
+                        <svg class="icon-svg user-icon">
+                          <use href="./images/sprite.svg#user"></use>
+                        </svg>
+                      </span>
                     </div>
                   </div>
+
                   <!-- tel input -->
-                  <div class="input-wrapper user-name">
-                    <label class="input-label" for="user-name">Имя</label>
+                  <div class="input-wrapper user-tel">
+                    <label class="input-label small-top" for="user-tel">Телефон</label>
                     <div class="input-area-wrapper">
                       <input
-                        type="text"
-                        name="user-name"
-                        id="user-name"
-                        class="input-text"
-                        autocomplete="name"
+                        type="tel"
+                        name="user-tel"
+                        id="user-tel"
+                        class="input-text user-tel"
+                        autocomplete="tel"
                       />
-                      <svg class="icon-svg">
-                        <use href="./images/icons/phone-user.svg#phone-user"></use>
-                      </svg>
+                      <span class="input-icon">
+                        <svg class="icon-svg phone-icon">
+                          <use href="./images/sprite.svg#phone-user"></use>
+                        </svg>
+                      </span>
                     </div>
                   </div>
-                  <!-- mail input -->
-                  <div class="input-wrapper user-name">
-                    <label class="input-label" for="user-name">Имя</label>
+
+                  <!-- email input -->
+                  <div class="input-wrapper user-email">
+                    <label class="input-label small-top" for="user-email">Почта</label>
                     <div class="input-area-wrapper">
                       <input
-                        type="text"
-                        name="user-name"
-                        id="user-name"
-                        class="input-text"
-                        autocomplete="name"
+                        type="email"
+                        name="user-email"
+                        id="user-email"
+                        class="input-text user-email"
+                        autocomplete="email"
                       />
-                      <svg class="icon-svg">
-                        <use></use>
-                      </svg>
+                      <span class="input-icon">
+                        <svg class="icon-svg envelope-icon">
+                          <use href="./images/sprite.svg#mail-user"></use>
+                        </svg>
+                      </span>
                     </div>
                   </div>
+
                   <!-- comment input -->
-                  <div>
-                    <label for=""></label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <div class="input-wrapper user-comment">
+                    <label class="input-label small-top" for="user-comment">Коментарий</label>
+                    <textarea
+                      class="input-text user-comment"
+                      name="user-comment"
+                      id="user-comment"
+                      rows="7"
+                      placeholder="Введите текст"
+                    ></textarea>
                   </div>
+
                   <!-- checkbox input -->
-                  <div>
-                    <label for=""></label>
+                  <div class="input-wrapper user-aggrement">
+                    <label class="input-label checkbox" for="user-aggrement">
+                      <span>Соглашаюсь с рассылкой и принимаю</span>
+                      <a href="#" class="label-link">Условия договора</a>
+                      <input
+                        class="user-aggrement checkbox"
+                        type="checkbox"
+                        name="user-aggrement"
+                        id="user-aggrement"
+                      />
+                      <span class="input-icon checkbox-icon">
+                        <svg class="icon-svg">
+                          <use href="./images/icons.svg#icon-checked"></use>
+                        </svg>
+                      </span>
+                    </label>
                   </div>
-                  <button type="submit" class="btn-base">Отправить</button>
+
+                  <button type="submit" class="btn base-btn">Отправить</button>
                 </form>
               </div>
             </div>
