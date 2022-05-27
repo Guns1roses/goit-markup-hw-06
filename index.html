@@ -68,97 +68,91 @@
                   />
                 </svg>
               </button>
-              <div class="form-wrapper p-40">
+              
                 <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
-                <form class="main-user-form">
+                <form class="modal-form">
                   <!-- name input -->
-                  <div class="input-wrapper user-name">
-                    <label class="input-label small-top" for="user-name">Имя</label>
-                    <div class="input-area-wrapper">
+                  
+                    <label class="form-modal-group" for="user-name">
+                    <span class="form-modal-label">Имя</span>
                       <input
                         type="text"
                         name="user-name"
                         id="user-name"
-                        class="input-text user-name"
+                        class="form-modal-input user-name"
                         autocomplete="name"
                       />
                       <span class="input-icon">
-                        <svg class="icon-svg user-icon">
+                        <svg class="icon-svg" width="12" height="12">
                           <use href="./images/sprite.svg#user"></use>
                         </svg>
-                      </span>
-                    </div>
-                  </div>
+                      </span>         
+                    </label>       
 
                   <!-- tel input -->
-                  <div class="input-wrapper user-tel">
-                    <label class="input-label small-top" for="user-tel">Телефон</label>
-                    <div class="input-area-wrapper">
+                  <label class="form-modal-group" for="user-phone">
+                    <span class="form-modal-label">Телефон</span>
                       <input
-                        type="tel"
-                        name="user-tel"
-                        id="user-tel"
-                        class="input-text user-tel"
-                        autocomplete="tel"
+                        type="text"
+                        name="user-phone"
+                        id="user-phone"
+                        class="form-modal-input"
+                        autocomplete="phone"
                       />
                       <span class="input-icon">
-                        <svg class="icon-svg phone-icon">
+                        <svg class="icon-svg" width="13" height="12">
                           <use href="./images/sprite.svg#phone-user"></use>
                         </svg>
-                      </span>
-                    </div>
-                  </div>
+                      </span>         
+                    </label>   
 
                   <!-- email input -->
-                  <div class="input-wrapper user-email">
-                    <label class="input-label small-top" for="user-email">Почта</label>
-                    <div class="input-area-wrapper">
+                  <label class="form-modal-group" for="user-mail">
+                    <span class="form-modal-label">Почта</span>
                       <input
-                        type="email"
-                        name="user-email"
-                        id="user-email"
-                        class="input-text user-email"
-                        autocomplete="email"
+                        type="text"
+                        name="user-mail"
+                        id="user-mail"
+                        class="form-modal-input"
+                        autocomplete="mail"
                       />
                       <span class="input-icon">
-                        <svg class="icon-svg envelope-icon">
+                        <svg class="icon-svg" width="15" height="12">
                           <use href="./images/sprite.svg#mail-user"></use>
                         </svg>
-                      </span>
-                    </div>
-                  </div>
+                      </span>         
+                    </label>   
 
                   <!-- comment input -->
-                  <div class="input-wrapper user-comment">
-                    <label class="input-label small-top" for="user-comment">Коментарий</label>
+                
+                    <label class="form-textarea" for="user-comment">Коментарий</label>
                     <textarea
-                      class="input-text user-comment"
+                      class="form-textarea-text user-comment"
                       name="user-comment"
                       id="user-comment"
-                      rows="7"
+                      rows="6"
                       placeholder="Введите текст"
-                    ></textarea>
-                  </div>
+                    ></textarea> 
 
                   <!-- checkbox input -->
-                  <div class="input-wrapper user-aggrement">
-                    <label class="input-label checkbox" for="user-aggrement">
-                      <span>Соглашаюсь с рассылкой и принимаю</span>
-                      <a href="#" class="label-link">Условия договора</a>
+                  
+                    <label class="form-checkbox" for="user-aggrement">
                       <input
-                        class="user-aggrement checkbox"
+                        class="checkbox visually-hidden"
                         type="checkbox"
                         name="user-aggrement"
                         id="user-aggrement"
                       />
-                      <span class="input-icon checkbox-icon">
-                        <svg class="icon-svg">
-                          <use href="./images/icons.svg#icon-checked"></use>
+                      <span class="custom-checkbox">
+                        <svg class="custom-checkbox-icon" width="16" height="15">
+                          <use href="./images/sprite.svg#checkbox"></use>
                         </svg>
-                      </span>
+                        </span>
+                      <span class="custom-checkbox-desc">Соглашаюсь с рассылкой и принимаю</span>
+                      <a href="#" class="label-link">Условия договора</a>                
+                      
                     </label>
-                  </div>
-
+                  
                   <button type="submit" class="btn base-btn">Отправить</button>
                 </form>
               </div>
