@@ -81,6 +81,7 @@
                         id="user-name"
                         class="form-modal-input user-name"
                         autocomplete="name"
+                        autofocus
                       />
                       <span class="input-icon">
                         <svg class="icon-svg" width="12" height="12">
@@ -127,7 +128,7 @@
                 
                     <label class="form-textarea" for="user-comment">Коментарий</label>
                     <textarea
-                      class="form-textarea-text user-comment"
+                      class="form-textarea-text"
                       name="user-comment"
                       id="user-comment"
                       rows="6"
@@ -147,10 +148,9 @@
                         <svg class="custom-checkbox-icon" width="16" height="15">
                           <use href="./images/sprite.svg#checkbox"></use>
                         </svg>
-                        </span>
+                      </span>
                       <span class="custom-checkbox-desc">Соглашаюсь с рассылкой и принимаю</span>
-                      <a href="#" class="label-link">Условия договора</a>                
-                      
+                      <a href="#" class="label-link">Условия договора</a>                                   
                     </label>
                   
                   <button type="submit" class="btn base-btn">Отправить</button>
