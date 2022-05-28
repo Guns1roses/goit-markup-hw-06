@@ -465,11 +465,11 @@ address {
   outline-offset: -2px;
   border-radius: 2px;
 
+  color: #ffffff;
   transition: background-color var(--animation);
 }
 
 .checkbox:checked + .custom-checkbox {
-  color: #ffffff;
   background-color: #2196f3;
 }
 
@@ -931,9 +931,15 @@ address {
   letter-spacing: 0.03em;
 
   background-color: #2f303a;
+  transition: border var(--animation);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+.newsletter-input:hover,
+.newsletter-input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .newsletter-btn {
