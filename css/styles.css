@@ -369,6 +369,7 @@ address {
 .close-btn {
   transition: fill var(--animation);
 }
+
 /* FORM MODAL */
 
 .form-title {
@@ -394,6 +395,13 @@ address {
 
 .form-modal-group {
   position: relative;
+
+  transition: border-color var(--animation);
+}
+
+.form-modal-group:focus-within .icon-svg,
+.form-modal-group:hover .icon-svg {
+  fill: #2196f3;
 }
 
 .form-modal-label {
